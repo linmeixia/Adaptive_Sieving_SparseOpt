@@ -40,4 +40,12 @@ Guideline:
 (2) run test file:
 >> run_test
 
+=========================================================================================================================
+
+Citation:
+If you use this work, please cite:
+
+Yancheng Yuan, Meixia Lin, Defeng Sun, and Kim-Chuan Toh, “Adaptive sieving: A dimension reduction technique for sparse optimization problems”, Mathematical Programming Computation, 2025, to appear.
+
+
 
