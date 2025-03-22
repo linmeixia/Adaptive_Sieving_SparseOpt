@@ -153,6 +153,8 @@ elseif strcmp(lossname,'logistic')
             end
             all_var.x = x; all_var.u = u; all_var.xi = xi;
         end
+    else
+        error('Solver for %s and %s is not available.', lossname, regularizer.name);
     end
 end
 % nnz(all_var.x)
