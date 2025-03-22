@@ -29,6 +29,11 @@ else
     group_info.P = [1:1:p];
     group_info.PT = [1:1:p];
 end
+org_group = zeros(n,1);
+for i = 1:size(group_info.M,2)
+    org_group(group_info.P(group_info.M(1,i):group_info.M(2,i))) = i;
+end
+group_info.org_group = org_group;
 y_now = Data.A*x + randn(n, 1);
 Data.y = ones(n,1);
 Data.y(y_now<0) = -1;
